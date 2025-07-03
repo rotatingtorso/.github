@@ -1,0 +1,40 @@
+name: Bug report
+desciption: File a bug report
+labels: bug
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "## Welcome!"
+  
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+        
+        Please make sure the same issue hasn't been reported previously by checking open & closed issues.
+        
+        High quality report makes it so much easier to understand the underlying problem so try to answer as many of the fields as possible and as accurately as possible.
+
+  - type: input
+    attributes:
+      label: Version
+      description: Version number or Git commit hash where the bug was encountered in.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Issue description
+      description: |
+        Describe encountered issue briefly. What doesn't work, and how do you expect it to work instead?
+        You can include images or videos with drag and drop, and format code blocks or logs with <code>```</code> tags.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Reproduce steps
+      description: |
+        List of steps or sample code that reproduces the issue (if applicaple). Reproduction steps helps immensively when trying to resolve issues.
